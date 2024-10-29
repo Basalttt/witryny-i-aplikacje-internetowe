@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strona na "Witryny i Aplikacje Internetowe"</title>
+</head>
+<body>
+    <h1>zagrajmy...</h1>
+    <button onclick="pokazAlert()">czy chczesz zagrag w grę?...</button>
+    <button onclick="zadajPytanie()">/</button>
+    <button onclick="potwierdzDzialanie()">/O</button>
+    <button onclick="otworzNoweOkno()">//</button>
+
+    <script>
+        // Funkcja pokazuje prosty komunikat typu alert
+        function pokazAlert() {
+            alert("kliknij w /...");
+        }
+
+        // Funkcja zadaje pytanie użytkownikowi i wyświetla odpowiedź
+        function zadajPytanie() {
+            // prompt otwiera okno dialogowe i zapisuje odpowiedź użytkownika do zmiennej
+            let odpowiedz = prompt("Jak masz na imię?");
+            // Jeśli odpowiedź nie jest pusta, pokazujemy ją na stronie
+            if (odpowiedz) {
+                alert("kliknij w /O..." + odpowiedz + "...");
+            } else {
+                alert("szkoda...");
+            }
+        }
+
+        // Funkcja prosi użytkownika o potwierdzenie
+        function potwierdzDzialanie() {
+            // confirm otwiera okno dialogowe z prośbą o potwierdzenie
+            let potwierdzenie = confirm("Czy chcesz kontynuować?");
+            // Sprawdzamy, czy użytkownik nacisnął OK, czy Anuluj
+            if (potwierdzenie) {
+                alert("kliknj w //...");
+            } else {
+                alert("szkoda...");
+            }
+        }
+
+        // Funkcja otwiera nowe okno
+        function otworzNoweOkno() {
+            // window.open() otwiera nową stronę lub nowe okno
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ",);
+            // "_blank" sprawia, że strona otworzy się w nowym oknie/zakładce
+			//Sebastian Morton 3K...
+        }
+    </script>
+</body>
+</html> 
